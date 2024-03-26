@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Invoice Table</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    th, td {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+    }
+
+    th {
+        background-color: #f2f2f2;
+    }
+
+    tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+    tr:hover {
+        background-color: #ddd;
+    }
+
+    .completed {
+        background-color: lightgreen;
+    }
+
+    .processing {
+        background-color: lightblue;
+    }
+
+    .not-completed {
+        background-color: orange;
+    }
+
+    .action-button {
+        background-color: #4CAF50; /* Green */
+        border: none;
+        color: white;
+        padding: 8px 12px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 14px;
+        margin: 2px;
+        cursor: pointer;
+        border-radius: 4px;
+    }
+</style>
+</head>
+<body>
+
+<h2>Invoice Details</h2>
+
+<table>
+  <tr>
+    <th>INVOICE</th>
+    <th>NAME</th>
+    <th>DATE</th>
+    <th>PAYMENT STATUS</th>
+    <th>AMOUNT</th>
+    <th>ACTION</th>
+  </tr>
+  <tr>
+    <td>NA</td>
+    <td>Pratham</td>
+    <td>01/04/2022</td>
+    <td class="not-completed">Not Completed</td>
+    <td>22,000</td>
+    <td><button class="action-button">Delete</button></td>
+  </tr>
+  <tr>
+    <td>INV 1</td>
+    <td>Doe</td>
+    <td>01/04/2022</td>
+    <td class="completed">Completed</td>
+    <td>23,000</td>
+    <td><button class="action-button">Delete</button></td>
+  </tr>
+  <tr>
+    <td>INV 2</td>
+    <td>Cristian</td>
+    <td>01/04/2022</td>
+    <td class="processing">Processing</td>
+    <td>28,000</td>
+    <td><button class="action-button">Delete</button></td>
+  </tr>
+  <tr>
+    <td>INV 3</td>
+    <td>Kiran</td>
+    <td>01/04/2022</td>
+    <td class="processing">Processing</td>
+    <td>25,000</td>
+    <td><button class="action-button">Delete</button></td>
+  </tr>
+  <tr>
+    <td>INV 4</td>
+    <td>Kite</td>
+    <td>01/04/2022</td>
+    <td class="completed">Completed</td>
+    <td>22,000</td>
+    <td><button class="action-button">Delete</button></td>
+  </tr>
+</table>
+
+</body>
+</html>
